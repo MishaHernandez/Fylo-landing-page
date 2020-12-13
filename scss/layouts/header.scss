@@ -1,0 +1,30 @@
+.header-container {
+    width: 81%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    margin-bottom: 5.7rem;
+}
+
+.intro {
+    text-align: center;
+
+    &__illustration {
+        margin-bottom: 1.6rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        margin-bottom: 1.7rem;
+    }
+
+    &__paragraph {
+        @include paragraph(2.1rem);
+    }
+    
+    // &__form {
+        
+    // }
+}

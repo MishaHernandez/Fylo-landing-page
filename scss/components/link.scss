@@ -1,0 +1,14 @@
+.section-2__link {
+    a {
+        display: inline-flex;
+        align-items: center;
+        color: $moderate-cyan;
+        border-bottom: 1px solid;
+        padding-bottom: 6px;
+        font-size: 13px;
+
+        svg {
+            margin-left: 8px;
+        }
+    }
+}

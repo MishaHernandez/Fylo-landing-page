@@ -1,0 +1,8 @@
+.intro__form-input {
+    @include input (13px, 1rem, 4px);
+    border: 1px solid black;
+}
+
+.cta__input {
+    @include input (11px, 8px, 2px);
+}

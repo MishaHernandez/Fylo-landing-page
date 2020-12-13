@@ -1,0 +1,40 @@
+.footer-container {
+    width: 81%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .logo {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.info {
+    // display: grid;
+    
+    &__contact {
+        margin-bottom: 4rem;
+
+        p {
+            display: flex;
+            align-items: center;
+            svg {
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+    &__site {
+        display: inline-grid;
+        margin-bottom: 2rem;
+        row-gap: 2.1rem;
+
+        a {
+            color: inherit;
+            display: block;
+            margin-bottom: 1.3rem;
+        }
+    }
+
+    // &__social {}
+}

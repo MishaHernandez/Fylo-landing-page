@@ -1,6 +1,22 @@
-@import 'variables';
-@import 'fonts';
-@import 'normalize';
-@import 'base';
-@import 'header';
-@import 'footer';
+// Base
+@import 'base/normalize';
+@import 'base/fonts';
+
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'base/base';
+
+// Coponents
+@import 'components/navbar';
+@import 'components/input';
+@import 'components/button';
+@import 'components/link';
+@import 'components/card';
+@import 'components/socialbuttons';
+@import 'components/attribution';
+
+// Layouts
+@import 'layouts/header';
+@import 'layouts/content';
+@import 'layouts/footer';
+@import 'layouts/breakpoints';

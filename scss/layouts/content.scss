@@ -1,0 +1,47 @@
+.section-2 {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__illustration {
+        margin-bottom: 5.2rem;
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1.7rem;
+    }
+
+    &__paragraph {
+        @include paragraph(1.1rem);
+        color: $desaturated-blue;
+
+        &:nth-of-type(2) {
+            margin-bottom: 2.3rem;
+        }
+    }
+
+    &__link {
+        text-align: center;
+        margin-bottom: 2.6rem;
+    }
+
+    &__card {
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.cta {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: $light-grayish-blue;
+    text-align: center;
+
+    &__paragraph {
+        @include paragraph(1.5rem);
+    }
+}

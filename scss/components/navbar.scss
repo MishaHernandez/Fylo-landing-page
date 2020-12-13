@@ -1,0 +1,25 @@
+.navbar {
+    padding-top: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        width: 83px;
+    }
+
+    .menu {
+        list-style-type: none;
+        padding-left: 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+        &__link {
+            font-size: 13px;
+            color: inherit;
+        }
+    }
+}
