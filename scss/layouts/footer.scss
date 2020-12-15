@@ -2,6 +2,10 @@
     width: 81%;
     margin-left: auto;
     margin-right: auto;
+
+    @include big-tablet {
+        width: 90%;
+    }
     
     .logo {
         margin-bottom: 2.5rem;
@@ -9,7 +13,11 @@
 }
 
 .info {
-    // display: grid;
+    display: grid;
+
+    @include big-tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
     
     &__contact {
         margin-bottom: 4rem;
@@ -20,6 +28,12 @@
             svg {
                 margin-right: 1rem;
             }
+
+            @include big-tablet {
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
         }
 
     }
@@ -28,6 +42,11 @@
         display: inline-grid;
         margin-bottom: 2rem;
         row-gap: 2.1rem;
+
+        @include big-tablet {
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+        }
 
         a {
             color: inherit;

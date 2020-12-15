@@ -4,6 +4,7 @@
 
 @import 'utilities/variables';
 @import 'utilities/mixins';
+@import 'layouts/breakpoints';
 @import 'base/base';
 
 // Coponents
@@ -19,4 +20,3 @@
 @import 'layouts/header';
 @import 'layouts/content';
 @import 'layouts/footer';
-@import 'layouts/breakpoints';

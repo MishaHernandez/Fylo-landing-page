@@ -7,6 +7,10 @@
 
     .logo {
         width: 83px;
+
+        @include tablet {
+            width: 125px;
+        }
     }
 
     .menu {
@@ -17,9 +21,19 @@
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
 
+        @include tablet {
+            grid-template-columns: repeat(3, auto);
+            justify-content: space-between;
+            width: 18rem;
+        }
+
         &__link {
             font-size: 13px;
             color: inherit;
+
+            @include big-tablet {
+                font-size: 1rem;
+            }
         }
     }
 }
