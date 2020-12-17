@@ -1,13 +1,3 @@
-%input {
-    width: 100%;
-    font-family: $font2;
-    border-style: none;
-}
-
-%paragraph {
-    font-size: 14px;
-}
-
 @mixin paragraph ($margin-bottom) {
     @extend %paragraph;
     margin-bottom: $margin-bottom;

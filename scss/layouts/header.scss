@@ -1,7 +1,6 @@
 .header-container {
     width: 81%;
-    margin-left: auto;
-    margin-right: auto;
+    @extend %margin-lr;
 
     @include big-tablet {
         width: 90%;

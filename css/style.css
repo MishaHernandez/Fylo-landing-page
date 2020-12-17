@@ -362,6 +362,11 @@ template {
   font-size: 14px;
 }
 
+.footer-container, .cta, .section-2__card, .section-2, .header-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -568,8 +573,6 @@ footer svg {
 
 .header-container {
   width: 81%;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media (min-width: 1024px) {
   .header-container {
@@ -646,8 +649,6 @@ footer svg {
 
 .section-2 {
   width: 85%;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -690,8 +691,6 @@ footer svg {
 }
 .section-2__card {
   width: 92%;
-  margin-left: auto;
-  margin-right: auto;
   text-align: left;
 }
 @media (min-width: 1024px) {
@@ -703,8 +702,6 @@ footer svg {
 
 .cta {
   width: 75%;
-  margin-left: auto;
-  margin-right: auto;
   color: #f6f6fe;
   text-align: center;
 }
@@ -740,8 +737,6 @@ footer svg {
 
 .footer-container {
   width: 81%;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media (min-width: 1024px) {
   .footer-container {

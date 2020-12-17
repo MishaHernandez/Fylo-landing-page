@@ -1,7 +1,6 @@
 .section-2 {
     width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    @extend %margin-lr;
     text-align: center;
 
     @include big-tablet {
@@ -47,8 +46,7 @@
 
     &__card {
         width: 92%;
-        margin-left: auto;
-        margin-right: auto;
+        @extend %margin-lr;
         text-align: left;
 
         @include big-tablet {
@@ -60,8 +58,7 @@
 
 .cta {
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    @extend %margin-lr;
     color: $light-grayish-blue;
     text-align: center;
 
