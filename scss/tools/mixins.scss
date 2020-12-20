@@ -8,6 +8,7 @@
     font-size: $font-size;
     margin-bottom: $margin-bottom;
     border-radius: $border-radius;
+    outline: none;
     
     padding: 0.93em 1.53em;
     &:placeholder-shown {
@@ -24,6 +25,13 @@
     font-weight: 700;
     color: #fff;
     background-color: $bright-blue;
+
+    @include desktop {
+        &:hover {
+            cursor: pointer;
+            opacity: .5;
+        }
+    }
 }
 
 @mixin flex ($direction:row, $break:nowrap, $alignWidth:center, $alignHeight:center) {

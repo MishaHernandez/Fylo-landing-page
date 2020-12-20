@@ -36,6 +36,7 @@
 
         @include desktop {
             font-size: 2.5rem;
+            margin-bottom: 2.3rem
         }
     }
 
@@ -51,11 +52,19 @@
 
         &:nth-of-type(2) {
             margin-bottom: 2.3rem;
+
+            @include desktop {
+                margin-bottom: 1.15rem;
+            }
         }
     }
 
     &__link {
         margin-bottom: 2.6rem;
+
+        @include desktop {
+            margin-bottom: 2.8rem;
+        }
 
         a {
             @include desktop {
@@ -104,6 +113,7 @@
     &__subtitle {
         @include desktop {
             font-size: 2rem;
+            margin-bottom: 21px
         }
     }
 
@@ -113,6 +123,7 @@
         @include desktop {
             font-size: 1rem;
             width: 500px;
+            @include paragraph(14px);
         }
     }
 

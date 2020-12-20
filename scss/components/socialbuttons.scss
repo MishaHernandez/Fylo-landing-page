@@ -13,5 +13,14 @@
         border: 1px solid $light-grayish-blue;
         border-radius: 50%;
         margin-right: 12px;
+
+        @include desktop {
+            &:hover {
+                border-color: $moderate-cyan;
+            }
+            &:hover svg {
+                fill: $moderate-cyan;
+            }
+        }
     }
 }

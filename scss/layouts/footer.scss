@@ -8,6 +8,10 @@
     
     .logo {
         margin-bottom: 2.5rem;
+
+        @include desktop {
+            margin-bottom: 1.4rem;
+        }
     }
 }
 
@@ -51,6 +55,12 @@
             color: inherit;
             display: block;
             margin-bottom: 1.3rem;
+
+            @include desktop {
+                &:hover {
+                    color: $moderate-cyan;
+                }
+            }
         }
     }
 
