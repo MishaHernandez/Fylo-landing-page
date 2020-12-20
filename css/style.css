@@ -529,7 +529,7 @@ footer svg {
 @media (min-width: 1366px) {
   .intro__form-button:hover {
     cursor: pointer;
-    opacity: 0.5;
+    background-color: rgba(135, 206, 235, 0.5);
   }
 }
 
@@ -544,7 +544,7 @@ footer svg {
 @media (min-width: 1366px) {
   .cta__button:hover {
     cursor: pointer;
-    opacity: 0.5;
+    background-color: rgba(135, 206, 235, 0.5);
   }
 }
 @media (min-width: 1366px) {
@@ -561,7 +561,7 @@ footer svg {
 @media (min-width: 1366px) and (min-width: 1366px) {
   .cta__button:hover {
     cursor: pointer;
-    opacity: 0.5;
+    background-color: rgba(135, 206, 235, 0.5);
   }
 }
 
@@ -640,16 +640,17 @@ footer svg {
 }
 @media (min-width: 1366px) {
   .info__social-link:hover {
-    border-color: #3c9f8f;
+    border-color: rgba(135, 206, 235, 0.5);
   }
   .info__social-link:hover svg {
-    fill: #3c9f8f;
+    fill: rgba(135, 206, 235, 0.5);
   }
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 0;
   padding: 1rem 0;
 }
 .attribution__link {
@@ -963,7 +964,7 @@ footer svg {
 }
 @media (min-width: 1366px) {
   .info__site a:hover {
-    color: #3c9f8f;
+    color: rgba(135, 206, 235, 0.5);
   }
 }
 

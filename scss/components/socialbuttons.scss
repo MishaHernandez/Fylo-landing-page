@@ -16,10 +16,10 @@
 
         @include desktop {
             &:hover {
-                border-color: $moderate-cyan;
+                border-color: $hover;
             }
             &:hover svg {
-                fill: $moderate-cyan;
+                fill: $hover;
             }
         }
     }
