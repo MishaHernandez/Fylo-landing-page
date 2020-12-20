@@ -1,5 +1,5 @@
 .header-container {
-    width: 81%;
+    @include box-size (81%, auto);
     max-width: 1280px;
     @extend %margin-lr;
 
@@ -37,7 +37,7 @@
         margin-bottom: 1.6rem;
 
         @include tablet {
-            width: 80%;
+            @include box-size (80%, auto);
         }
 
         @include big-tablet {
@@ -74,14 +74,12 @@
 
         @include tablet {
             input {
-                width: 70%;
+                @include box-size (70%, auto)
             }
         }
 
         @include big-tablet {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            @include flex (row, nowrap, flex-start, center);
 
             input {
                 &:first-child { 

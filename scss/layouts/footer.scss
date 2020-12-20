@@ -1,9 +1,9 @@
 .footer-container {
-    width: 81%;
+    @include box-size (81%, auto);
     @extend %margin-lr;
 
     @include big-tablet {
-        width: 90%;
+        @include box-size (90%, auto);
     }
     
     .logo {
@@ -26,8 +26,7 @@
         margin-bottom: 4rem;
 
         p {
-            display: flex;
-            align-items: center;
+            @include flex (row, nowrap, flex-start, center);
             svg {
                 margin-right: 1rem;
             }

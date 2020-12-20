@@ -1,5 +1,5 @@
 @mixin paragraph ($margin-bottom) {
-    @extend %paragraph;
+    @extend %paragraph-size;
     margin-bottom: $margin-bottom;
 }
 
@@ -8,7 +8,6 @@
     font-size: $font-size;
     margin-bottom: $margin-bottom;
     border-radius: $border-radius;
-    outline: none;
     
     padding: 0.93em 1.53em;
     &:placeholder-shown {
@@ -21,7 +20,6 @@
     font-size: $font-size;
     padding: $padding calc(#{$padding} * 1.5);
     border-radius: $border-radius;
-
     font-weight: 700;
     color: #fff;
     background-color: $bright-blue;

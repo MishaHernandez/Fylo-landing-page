@@ -1,11 +1,11 @@
 .section-2 {
-    width: 85%;
+    @include box-size (85%, auto);
     max-width: 1280px;
     @extend %margin-lr;
     text-align: center;
 
     @include big-tablet {
-        width: 90%;
+        @include box-size (90%, auto);
         text-align: left;
         
         display: grid;
@@ -18,7 +18,7 @@
         margin-bottom: 5.2rem;
         
         @include tablet {
-            width: 80%;
+            @include box-size (80%, auto);
         }
 
         @include big-tablet {
@@ -74,12 +74,12 @@
     }
 
     &__card {
-        width: 92%;
+        @include box-size (92%, auto);
         @extend %margin-lr;
         text-align: left;
 
         @include big-tablet {
-            width: 65%;
+            @include box-size (65%, auto);
             margin: 0;
         }
 
@@ -90,14 +90,14 @@
 }
 
 .cta {
-    width: 75%;
+    @include box-size (75%, auto);
     max-width: 1280px;
     @extend %margin-lr;
     color: $light-grayish-blue;
     text-align: center;
 
     @include big-tablet {
-        width: 90%;
+        @include box-size (90%, auto);
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
@@ -130,23 +130,23 @@
     &__form {
         @include tablet {
             input {
-                width: 70%;
+                @include box-size (70%, auto);
             }
         }
         
         @include big-tablet {
-            width: 70%;
+            @include box-size (70%, auto);
             input {
                 width: auto;
 
                 &:first-child {
-                    width: 100%;
+                    @include box-size ();
                 }
             }
         }
 
          @include desktop {
-             width: 95%;
+             @include box-size (95%, auto);
          }
     }
 }

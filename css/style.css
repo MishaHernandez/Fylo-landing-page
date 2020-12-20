@@ -356,6 +356,7 @@ template {
   width: 100%;
   font-family: "Raleway";
   border-style: none;
+  outline: none;
 }
 
 .cta__paragraph, .section-2__paragraph, .intro__paragraph {
@@ -485,7 +486,6 @@ footer svg {
   font-size: 13px;
   margin-bottom: 1rem;
   border-radius: 4px;
-  outline: none;
   padding: 0.93em 1.53em;
   border: 1px solid black;
 }
@@ -497,7 +497,6 @@ footer svg {
   font-size: 11px;
   margin-bottom: 8px;
   border-radius: 2px;
-  outline: none;
   padding: 0.93em 1.53em;
 }
 .cta__input:placeholder-shown {
@@ -508,7 +507,6 @@ footer svg {
     font-size: 13px;
     margin-bottom: 1rem;
     border-radius: 4px;
-    outline: none;
     padding: 0.93em 1.53em;
     padding: 1rem 1.53em;
   }
@@ -659,6 +657,7 @@ footer svg {
 
 .header-container {
   width: 81%;
+  height: auto;
   max-width: 1280px;
 }
 @media (min-width: 1024px) {
@@ -701,6 +700,7 @@ footer svg {
 @media (min-width: 768px) {
   .intro__illustration {
     width: 80%;
+    height: auto;
   }
 }
 @media (min-width: 1024px) {
@@ -737,11 +737,13 @@ footer svg {
 @media (min-width: 768px) {
   .intro__form input {
     width: 70%;
+    height: auto;
   }
 }
 @media (min-width: 1024px) {
   .intro__form {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
   }
@@ -757,12 +759,14 @@ footer svg {
 
 .section-2 {
   width: 85%;
+  height: auto;
   max-width: 1280px;
   text-align: center;
 }
 @media (min-width: 1024px) {
   .section-2 {
     width: 90%;
+    height: auto;
     text-align: left;
     display: grid;
     grid-template-columns: 52% 48%;
@@ -776,6 +780,7 @@ footer svg {
 @media (min-width: 768px) {
   .section-2__illustration {
     width: 80%;
+    height: auto;
   }
 }
 @media (min-width: 1024px) {
@@ -832,11 +837,13 @@ footer svg {
 }
 .section-2__card {
   width: 92%;
+  height: auto;
   text-align: left;
 }
 @media (min-width: 1024px) {
   .section-2__card {
     width: 65%;
+    height: auto;
     margin: 0;
   }
 }
@@ -848,6 +855,7 @@ footer svg {
 
 .cta {
   width: 75%;
+  height: auto;
   max-width: 1280px;
   color: #f6f6fe;
   text-align: center;
@@ -855,6 +863,7 @@ footer svg {
 @media (min-width: 1024px) {
   .cta {
     width: 90%;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -887,31 +896,37 @@ footer svg {
 @media (min-width: 768px) {
   .cta__form input {
     width: 70%;
+    height: auto;
   }
 }
 @media (min-width: 1024px) {
   .cta__form {
     width: 70%;
+    height: auto;
   }
   .cta__form input {
     width: auto;
   }
   .cta__form input:first-child {
     width: 100%;
+    height: 100%;
   }
 }
 @media (min-width: 1366px) {
   .cta__form {
     width: 95%;
+    height: auto;
   }
 }
 
 .footer-container {
   width: 81%;
+  height: auto;
 }
 @media (min-width: 1024px) {
   .footer-container {
     width: 90%;
+    height: auto;
   }
 }
 .footer-container .logo {
@@ -936,6 +951,8 @@ footer svg {
 }
 .info__contact p {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
   align-items: center;
 }
 .info__contact p svg {
