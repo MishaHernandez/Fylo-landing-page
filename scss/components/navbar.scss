@@ -11,6 +11,9 @@
         @include tablet {
             width: 125px;
         }
+        @include desktop {
+            width: 166px;
+        }
     }
 
     .menu {
@@ -24,7 +27,7 @@
         @include tablet {
             grid-template-columns: repeat(3, auto);
             justify-content: space-between;
-            width: 18rem;
+            width: 17rem;
         }
 
         &__link {

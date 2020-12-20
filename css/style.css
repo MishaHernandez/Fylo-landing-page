@@ -437,6 +437,11 @@ footer svg {
     width: 125px;
   }
 }
+@media (min-width: 1366px) {
+  .navbar .logo {
+    width: 166px;
+  }
+}
 .navbar .menu {
   list-style-type: none;
   padding-left: 0;
@@ -448,7 +453,7 @@ footer svg {
   .navbar .menu {
     grid-template-columns: repeat(3, auto);
     justify-content: space-between;
-    width: 18rem;
+    width: 17rem;
   }
 }
 .navbar .menu__link {
@@ -481,6 +486,18 @@ footer svg {
 .cta__input:placeholder-shown {
   color: #bfbfbf;
 }
+@media (min-width: 1366px) {
+  .cta__input {
+    font-size: 13px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    padding: 0.93em 1.53em;
+    padding: 1rem 1.53em;
+  }
+  .cta__input:placeholder-shown {
+    color: #bfbfbf;
+  }
+}
 
 .intro__form-button {
   font-size: 14px;
@@ -499,6 +516,17 @@ footer svg {
   font-weight: 700;
   color: #fff;
   background-color: #3065f8;
+}
+@media (min-width: 1366px) {
+  .cta__button {
+    font-size: 14px;
+    padding: 14px calc(14px * 1.5);
+    border-radius: 2px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #3065f8;
+    padding: 14px 30px;
+  }
 }
 
 .section-2__link a {
@@ -523,6 +551,11 @@ footer svg {
 .card__paragraph {
   font-size: 11px;
   margin-top: 4px;
+}
+@media (min-width: 1366px) {
+  .card__paragraph {
+    font-size: 13px;
+  }
 }
 .card__profile {
   display: flex;
@@ -573,6 +606,7 @@ footer svg {
 
 .header-container {
   width: 81%;
+  max-width: 1280px;
 }
 @media (min-width: 1024px) {
   .header-container {
@@ -582,6 +616,11 @@ footer svg {
 
 .navbar {
   margin-bottom: 5.7rem;
+}
+@media (min-width: 1366px) {
+  .navbar {
+    margin-bottom: 5.6rem;
+  }
 }
 
 .intro {
@@ -611,11 +650,16 @@ footer svg {
     margin-bottom: 0;
   }
 }
+@media (min-width: 1366px) {
+  .intro__illustration {
+    width: 636px;
+  }
+}
 .intro__title {
   font-size: 1.5rem;
   margin-bottom: 1.7rem;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .intro__title {
     font-size: 2.5rem;
     font-family: "Raleway";
@@ -624,7 +668,7 @@ footer svg {
 .intro__paragraph {
   margin-bottom: 2.1rem;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .intro__paragraph {
     font-size: 1.1rem;
   }
@@ -637,18 +681,22 @@ footer svg {
 @media (min-width: 1024px) {
   .intro__form {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
   .intro__form input:first-child {
     margin-bottom: 0;
     margin-right: 1rem;
-    width: 90%;
+    width: 51%;
+  }
+  .intro__form input:last-child {
+    width: 32%;
   }
 }
 
 .section-2 {
   width: 85%;
+  max-width: 1280px;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -656,7 +704,7 @@ footer svg {
     width: 90%;
     text-align: left;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 52% 48%;
     justify-items: end;
     align-items: center;
   }
@@ -674,20 +722,41 @@ footer svg {
     order: 2;
   }
 }
+@media (min-width: 1366px) {
+  .section-2__illustration {
+    width: 542px;
+  }
+}
 .section-2__subtitle {
   font-size: 1rem;
   margin-bottom: 1.7rem;
+}
+@media (min-width: 1366px) {
+  .section-2__subtitle {
+    font-size: 2.5rem;
+  }
 }
 .section-2__paragraph {
   margin-bottom: 1.1rem;
   color: #585989;
   text-align: left;
 }
+@media (min-width: 1366px) {
+  .section-2__paragraph {
+    font-size: 1rem;
+    width: 540px;
+  }
+}
 .section-2__paragraph:nth-of-type(2) {
   margin-bottom: 2.3rem;
 }
 .section-2__link {
   margin-bottom: 2.6rem;
+}
+@media (min-width: 1366px) {
+  .section-2__link a {
+    font-size: 1rem;
+  }
 }
 .section-2__card {
   width: 92%;
@@ -699,9 +768,15 @@ footer svg {
     margin: 0;
   }
 }
+@media (min-width: 1366px) {
+  .section-2__card {
+    width: 350px;
+  }
+}
 
 .cta {
   width: 75%;
+  max-width: 1280px;
   color: #f6f6fe;
   text-align: center;
 }
@@ -715,8 +790,25 @@ footer svg {
     text-align: left;
   }
 }
+@media (min-width: 1366px) {
+  .cta {
+    grid-template-columns: 60% 40%;
+    justify-items: flex-start;
+  }
+}
+@media (min-width: 1366px) {
+  .cta__subtitle {
+    font-size: 2rem;
+  }
+}
 .cta__paragraph {
   margin-bottom: 1.5rem;
+}
+@media (min-width: 1366px) {
+  .cta__paragraph {
+    font-size: 1rem;
+    width: 500px;
+  }
 }
 @media (min-width: 768px) {
   .cta__form input {
@@ -732,6 +824,11 @@ footer svg {
   }
   .cta__form input:first-child {
     width: 100%;
+  }
+}
+@media (min-width: 1366px) {
+  .cta__form {
+    width: 95%;
   }
 }
 

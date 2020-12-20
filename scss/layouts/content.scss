@@ -1,5 +1,6 @@
 .section-2 {
     width: 85%;
+    max-width: 1280px;
     @extend %margin-lr;
     text-align: center;
 
@@ -8,7 +9,7 @@
         text-align: left;
         
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 52% 48%;
         justify-items: end;
         align-items: center;
     }
@@ -23,17 +24,30 @@
         @include big-tablet {
             order: 2;
         }
+
+        @include desktop {
+            width: 542px;
+        }
     }
 
     &__subtitle {
         font-size: 1rem;
         margin-bottom: 1.7rem;
+
+        @include desktop {
+            font-size: 2.5rem;
+        }
     }
 
     &__paragraph {
         @include paragraph(1.1rem);
         color: $desaturated-blue;
         text-align: left;
+
+        @include desktop {
+            font-size: 1rem;
+            width: 540px;
+        }
 
         &:nth-of-type(2) {
             margin-bottom: 2.3rem;
@@ -42,6 +56,12 @@
 
     &__link {
         margin-bottom: 2.6rem;
+
+        a {
+            @include desktop {
+                font-size: 1rem;
+            }
+        }
     }
 
     &__card {
@@ -53,11 +73,16 @@
             width: 65%;
             margin: 0;
         }
+
+        @include desktop {
+            width: 350px;
+        }
     }
 }
 
 .cta {
     width: 75%;
+    max-width: 1280px;
     @extend %margin-lr;
     color: $light-grayish-blue;
     text-align: center;
@@ -71,8 +96,24 @@
         text-align: left;
     }
 
+    @include desktop {
+        grid-template-columns: 60% 40%;
+        justify-items: flex-start;
+    }
+
+    &__subtitle {
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+
     &__paragraph {
         @include paragraph(1.5rem);
+
+        @include desktop {
+            font-size: 1rem;
+            width: 500px;
+        }
     }
 
     &__form {
@@ -92,5 +133,9 @@
                 }
             }
         }
+
+         @include desktop {
+             width: 95%;
+         }
     }
 }

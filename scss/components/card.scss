@@ -10,6 +10,10 @@
     &__paragraph {
         font-size: 11px;
         margin-top: 4px;
+
+        @include desktop {
+            font-size: 13px;
+        }
     }
 
     &__profile {

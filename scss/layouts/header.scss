@@ -1,5 +1,6 @@
 .header-container {
     width: 81%;
+    max-width: 1280px;
     @extend %margin-lr;
 
     @include big-tablet {
@@ -9,6 +10,10 @@
 
 .navbar {
     margin-bottom: 5.7rem;
+
+    @include desktop {
+        margin-bottom: 5.6rem;
+    }
 }
 
 .intro {
@@ -33,6 +38,10 @@
         @include big-tablet {
             order: 2;
             margin-bottom: 0;
+        }
+
+        @include desktop {
+            width: 636px;
         }
     }
 
@@ -64,14 +73,17 @@
 
         @include big-tablet {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
 
             input {
                 &:first-child { 
                     margin-bottom: 0; 
                     margin-right: 1rem; 
-                    width: 90%;
+                    width: 51%;
+                }
+                &:last-child {
+                    width: 32%;
                 }
             }
         }
