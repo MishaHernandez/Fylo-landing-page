@@ -585,18 +585,27 @@ footer svg {
 
 .card {
   padding: 1.2rem 1.5rem;
-  box-shadow: 0 0 8px #d9d9d9;
+  box-shadow: 0 0 8px #dedede;
+  background-color: #fff;
+}
+@media (min-width: 1366px) {
+  .card {
+    padding: 1.5rem 2rem;
+    border-radius: 6px;
+  }
 }
 .card__quotes {
   width: 12px;
 }
 .card__paragraph {
   font-size: 11px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 @media (min-width: 1366px) {
   .card__paragraph {
     font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 1rem;
   }
 }
 .card__profile {
@@ -608,11 +617,21 @@ footer svg {
   border-radius: 50%;
   margin-right: 8px;
 }
+@media (min-width: 1366px) {
+  .card__profile-avatar {
+    width: 2rem;
+  }
+}
 .card__profile-name {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1px;
   margin: 0;
+}
+@media (min-width: 1366px) {
+  .card__profile-name {
+    font-size: 11px;
+  }
 }
 .card__profile-position {
   font-size: 9px;
@@ -791,6 +810,7 @@ footer svg {
 @media (min-width: 1366px) {
   .section-2__illustration {
     width: 542px;
+    margin-bottom: 0;
   }
 }
 .section-2__subtitle {
